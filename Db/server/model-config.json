@@ -1,0 +1,64 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "chofer": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "viaje": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "movil": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "cuentaCorriente": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Denuncia": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "usuario": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Cliente": {
+    "dataSource": "mysql",
+    "public": true
+  }
+}

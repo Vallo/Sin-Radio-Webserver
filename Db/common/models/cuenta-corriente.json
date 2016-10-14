@@ -1,0 +1,27 @@
+{
+  "name": "cuentaCorriente",
+  "plural": "cuentasCorrientes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "cuit": {
+      "type": "string",
+      "required": true
+    },
+    "codigo": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

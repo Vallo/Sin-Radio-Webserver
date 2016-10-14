@@ -1,0 +1,23 @@
+{
+  "name": "movil",
+  "plural": "moviles",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "patente": {
+      "type": "string",
+      "required": true
+    },
+    "licencia": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

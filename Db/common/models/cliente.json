@@ -1,0 +1,31 @@
+{
+  "name": "Cliente",
+  "plural": "Clientes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "telefono": {
+      "type": "number",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "direccionFavorita": {
+      "type": "string",
+      "required": true
+    },
+    "direccionFavoritaLatLon": {
+      "type": "geopoint",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

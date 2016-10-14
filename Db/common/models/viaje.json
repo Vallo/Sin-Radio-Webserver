@@ -1,0 +1,43 @@
+{
+  "name": "viaje",
+  "plural": "viajes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "origen": {
+      "type": "string",
+      "required": true
+    },
+    "destino": {
+      "type": "string"
+    },
+    "origenLat": {
+      "type": "number"
+    },
+    "origenLon": {
+      "type": "number"
+    },
+    "destinoLat": {
+      "type": "number"
+    },
+    "destinoLon": {
+      "type": "number"
+    },
+    "estado": {
+      "type": "number"
+    },
+    "monto": {
+      "type": "number"
+    },
+    "movil": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
