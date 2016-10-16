@@ -1,6 +1,6 @@
 {
-  "name": "Cliente",
-  "plural": "Clientes",
+  "name": "cliente",
+  "plural": "clientes",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -12,6 +12,14 @@
       "required": true
     },
     "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "apellido": {
+      "type": "string",
+      "required": true
+    },
+    "dni": {
       "type": "string",
       "required": true
     },
