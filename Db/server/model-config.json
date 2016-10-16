@@ -57,7 +57,7 @@
     "dataSource": "mysql",
     "public": true
   },
-  "Cliente": {
+  "cliente": {
     "dataSource": "mysql",
     "public": true
   }
