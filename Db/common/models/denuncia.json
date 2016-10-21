@@ -1,5 +1,5 @@
 {
-  "name": "Denuncia",
+  "name": "denuncia",
   "plural": "denuncias",
   "base": "PersistedModel",
   "idInjection": true,
@@ -7,10 +7,6 @@
     "validateUpsert": true
   },
   "properties": {
-    "chofer": {
-      "type": "number",
-      "required": true
-    },
     "fecha": {
       "type": "date",
       "required": true
@@ -18,21 +14,18 @@
     "descripcion": {
       "type": "string",
       "required": true
+    },
+    "chofer": {
+      "type": "string",
+      "required": true
+    },
+    "cliente": {
+      "type": "telefono",
+      "required": true
     }
   },
   "validations": [],
-  "relations": {
-    "chofer_id": {
-      "type": "hasOne",
-      "model": "chofer",
-      "foreignKey": ""
-    },
-    "cliente": {
-      "type": "hasOne",
-      "model": "Cliente",
-      "foreignKey": "telefono"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

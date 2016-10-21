@@ -49,7 +49,7 @@
     "dataSource": "mysql",
     "public": true
   },
-  "Denuncia": {
+  "denuncia": {
     "dataSource": "mysql",
     "public": true
   },
