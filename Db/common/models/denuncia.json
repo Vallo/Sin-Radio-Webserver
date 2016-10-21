@@ -20,7 +20,7 @@
       "required": true
     },
     "cliente": {
-      "type": "telefono",
+      "type": "string",
       "required": true
     }
   },
