@@ -11,12 +11,22 @@
       "type": "string",
       "required": true
     },
-    "tel": {
+    "apellido": {
       "type": "string",
       "required": true
     },
-    "android_id": {
+    "celular": {
+      "type": "string",
+      "required": true
+    },
+    "domicilio": {
       "type": "string"
+    },
+    "dni": {
+      "type": "string"
+    },
+    "movil": {
+      "type": "number"
     }
   },
   "validations": [],

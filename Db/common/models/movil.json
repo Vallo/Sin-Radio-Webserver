@@ -11,7 +11,11 @@
       "type": "string",
       "required": true
     },
-    "licencia": {
+    "numeroMovil": {
+      "type": "number",
+      "required": true
+    },
+    "chasis": {
       "type": "number",
       "required": true
     }

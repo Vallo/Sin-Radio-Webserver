@@ -45,10 +45,6 @@
     "dataSource": "mysql",
     "public": true
   },
-  "cuentaCorriente": {
-    "dataSource": "mysql",
-    "public": true
-  },
   "denuncia": {
     "dataSource": "mysql",
     "public": true

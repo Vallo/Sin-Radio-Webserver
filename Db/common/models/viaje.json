@@ -7,33 +7,33 @@
     "validateUpsert": true
   },
   "properties": {
-    "origen": {
+    "direccionOrigen": {
       "type": "string",
       "required": true
     },
-    "destino": {
-      "type": "string"
-    },
-    "origenLat": {
-      "type": "number"
-    },
-    "origenLon": {
-      "type": "number"
-    },
-    "destinoLat": {
-      "type": "number"
-    },
-    "destinoLon": {
-      "type": "number"
+    "direccionOrigenLatLon": {
+      "type": "geoPoint"
     },
     "estado": {
       "type": "number"
     },
+    "direccionDestino": {
+      "type": "string"
+    },
     "monto": {
       "type": "number"
     },
-    "movil": {
+    "cliente": {
       "type": "number"
+    },
+    "cuentaCorriente": {
+      "type": "number"
+    },
+    "movilAsignado": {
+      "type": "number"
+    },
+    "fecha": {
+      "type": "date"
     }
   },
   "validations": [],
