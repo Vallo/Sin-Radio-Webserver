@@ -14,23 +14,23 @@
     ]
   },
   "User": {
-    "dataSource": "mysql",
+    "dataSource": "db",
     "public": false
   },
   "AccessToken": {
-    "dataSource": "mysql",
+    "dataSource": "db",
     "public": false
   },
   "ACL": {
-    "dataSource": "mysql",
+    "dataSource": "db",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "mysql",
+    "dataSource": "db",
     "public": false
   },
   "Role": {
-    "dataSource": "mysql",
+    "dataSource": "db",
     "public": false
   },
   "chofer": {

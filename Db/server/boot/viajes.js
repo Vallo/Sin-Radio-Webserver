@@ -6,6 +6,7 @@ module.exports = function(app) {
 	var router = app.loopback.Router();
 
 
+/*
 	router.get('/Api/viajes', function(req,res){
 		requestify.get(url + 'viajes').then(function(response){
 			res.send(response.getBody());
@@ -17,7 +18,6 @@ module.exports = function(app) {
 			res.send(response.getBody());
 		});
 	});
-
 	router.post('/Api/viajes', function(req,res){
 		var _lat = req.body.lat;
 		var _lon = req.body.lon;
@@ -41,6 +41,6 @@ module.exports = function(app) {
 
 			});
 		}
-	});
+	});*/
 	app.use(router);
 };
