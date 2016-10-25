@@ -14,6 +14,10 @@
     "direccionOrigenLatLon": {
       "type": "geoPoint"
     },
+    "detalle": {
+      "type": "string",
+      "required": true
+    },
     "estado": {
       "type": "number"
     },

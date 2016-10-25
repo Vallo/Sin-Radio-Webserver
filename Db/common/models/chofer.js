@@ -1,6 +1,6 @@
 'use strict';
 var requestify = require('requestify');
-var url = 'http://api.sin-radio.com.ar/'
+var url = require('../../config.js').url;
 
 module.exports = function(Chofer) {
 

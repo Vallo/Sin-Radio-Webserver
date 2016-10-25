@@ -1,10 +1,20 @@
 'use strict';
 var requestify = require('requestify');
+var db = require('../../common/utils/db.js');
 var url = 'http://api.sin-radio.com.ar/'
 module.exports = function(app) {
 
 	var router = app.loopback.Router();
 
+	router.get('/Api/viajesClientes', function(req,res){
+		db.query("SELECT direccionOrigen, direccionOrigenLatLon, estado, direccionDestino, monto, cliente, cuentaCorriente, movilAsignado,fecha, nombre,apellido FROM viaje inner join cliente on telefono=cliente")
+		.then(function(result){
+			res.send(result);
+		}).catch(function(err){
+			console.log(err);
+			res.sendStatus(500);
+		});		
+	});
 
 /*
 	router.get('/Api/viajes', function(req,res){
