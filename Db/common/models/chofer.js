@@ -1,6 +1,6 @@
 'use strict';
 var requestify = require('requestify');
-var url = require('../../config.js').url;
+var url = require('../../config.js').cloud;
 
 module.exports = function(Chofer) {
 
