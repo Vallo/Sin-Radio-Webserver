@@ -1,0 +1,39 @@
+{
+  "name": "posicion",
+  "plural": "posiciones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "android_id": {
+      "type": "string",
+      "required": true
+    },
+    "lat": {
+      "type": "number",
+      "required": true
+    },
+    "lon": {
+      "type": "number",
+      "required": true
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "estado": {
+      "type": "number",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

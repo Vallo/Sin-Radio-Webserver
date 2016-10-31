@@ -1,35 +1,38 @@
 var requestify = require('requestify');
 var cron = require('cron').CronJob;
 var db = require('../../common/utils/db.js');
+var config = require('../../config.js')
 
 
 module.exports = function(app) {
-	updateChoferes();
-	new cron('60 * * * * *', function() {
-		updateChoferes();
+	update();
+	new cron('10,20,30,40,50,60 * * * * *', function() {
+		update();
 	}, null, true, 'America/Los_Angeles');
 };
 
-/*
-function updateViajes() {
-	db.query('SELECT MAX(ID) as id FROM VIAJES').then(function(res){
-  		requestify.get('http://api.sin-radio.com.ar/viajes/' + res.id).then(function(response){
-  			response.body.forEach(function(viaje){
-				db.query('INSERT INTO VIAJES (')  				
-  			});
-		});
+function update(){
+	updateViajes();
+	updateChoferes();
+	updatePosiciones();
+}
+
+
+
+function updatePosiciones() {
+	requestify.get(config.cloud + '/posicion').then(function(response){
+		posiciones = JSON.parse(response.getBody());
+		for (var i = 0; i < posiciones.length; i++){
+			console.log(posiciones);
+			db.query('insert into posicion (android_id,lat,lon, nombre, estado, fecha) VALUES (?,?,?,?,?,?)', [posiciones[i].android_id, posiciones[i].lat,posiciones[i].lon,posiciones[i].nombre,posiciones[i].estado,posiciones[i].fecha]);
+		};
 	});
-}*/
+}
+
+function updateViajes() {
+	
+}
 
 function updateChoferes() {
-	/*db.query('SELECT 1 as ANDROID_ID FROM chofer').then(function(res){
-  		requestify.get('http://api.sin-radio.com.ar/chofer/').then(function(response){
-  			var choferes = JSON.parse(response.body);
-  			for (var i = 0; i < choferes.length; i++){
-  				//console.log(choferes[i]);
-  				db.query('INSERT INTO CHOFER (ANDROID_ID, TEL,NOMBRE) VALUES (?,?,?)', [choferes[i].android_id, choferes[i].tel,choferes[i].nombre]);
-  			};
-  			console.log('OUT');
-		});
-	});*/
+	
 }

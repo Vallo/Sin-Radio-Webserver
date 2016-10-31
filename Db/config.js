@@ -1,6 +1,6 @@
 var config = {};
 
-config.cloud = 'http://api.sin-radio.com.ar/';
+config.cloud = 'http://localhost';
 /*
 config.redis = {};
 config.web = {};

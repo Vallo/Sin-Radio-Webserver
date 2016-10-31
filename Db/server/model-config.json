@@ -56,5 +56,9 @@
   "cliente": {
     "dataSource": "mysql",
     "public": true
+  },
+  "posicion": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
