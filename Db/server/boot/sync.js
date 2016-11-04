@@ -13,7 +13,6 @@ module.exports = function(app) {
 
 function update(){
 	updateViajes();
-	updateChoferes();
 	updatePosiciones();
 }
 
@@ -30,9 +29,5 @@ function updatePosiciones() {
 }
 
 function updateViajes() {
-	
-}
-
-function updateChoferes() {
 	
 }

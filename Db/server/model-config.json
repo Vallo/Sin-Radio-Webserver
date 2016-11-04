@@ -60,5 +60,9 @@
   "posicion": {
     "dataSource": "mysql",
     "public": true
+  },
+  "test": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
