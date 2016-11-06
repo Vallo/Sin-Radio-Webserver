@@ -11,10 +11,10 @@ module.exports = function(app) {
 		function channelJoined (event, incoming) {
 			var clientes = app.models.cliente;//SI TENGO ESTE NAME EN LA DB REPRODUZCO SU ARCHIVO ASOCIADO Y ESPERO SU DTMF. SI NO TRANSFIERO A CENTRAL
 			incoming.once('ChannelDtmfReceived', dtmfReceived);
-			incoming.answer();
+			incoming.answer()
 			.then(function () {
 				return play(incoming, 'bienvenido'); //Bienvenido a sin-radio
-			});
+			})
 			.catch(function (err) {})
 			.then(function(){
 				clientes.find({where: {telefono : incoming.caller.name}}, function(err,result){
