@@ -6,6 +6,7 @@ module.exports = function(server) {
   router.get('/', server.loopback.status());
   router.get('/try', function(){
   	tts.getTts('Bienvenido a sin radio', 'bienvenido');
-  })
+		res.sendStatus(200);
+  });
   server.use(router);
 };

@@ -6,19 +6,11 @@ var tts = require('../../common/utils/tts.js');
 module.exports = function(app) {
 
 	var router = app.loopback.Router();
-
-
-	router.get('/Api/ivr/:id', function(req,res){ //me pasan el ANI devuelvo la ruta a los wav a reproducir con sus ID de dirección asociados?
-		var ani = req.params.id;
-		db.query('SELECT ID, RUTA_WAV FROM DIR_CLIENTE WHERE ANI = ?', ani).then(function(res){ 
-			if(!res[0]) res.send(400); // cliente nuevo
-			else
-				res.send(JSON.stringify(res)); 
-		});
-	});
-
-	router.get('/tts', function(req,res){
-		tts.getTts("asd",1);
+	router.get('/initTts', function(req,res){
+		tts.getTts("Bienvenido a sin radio",'bienvenido');
+		tts.getTts("Pulse uno si desea pedir un taxi hacia ",'desea');
+		tts.getTts("O aguarde y será atendido ",'aguarde');
+		tts.getTts("Su taxi se encuentra en camino. Muchas gracias por utilizar sin radio.",'taxiPedido');
 		res.sendStatus(200);
 	});
 	app.use(router);
