@@ -22,8 +22,7 @@ function updatePosiciones() {
 	requestify.get(config.cloud + '/posicion').then(function(response){
 		posiciones = JSON.parse(response.getBody());
 		for (var i = 0; i < posiciones.length; i++){
-			console.log(posiciones);
-			db.query('insert into posicion (android_id,lat,lon, nombre, estado, fecha) VALUES (?,?,?,?,?,?)', [posiciones[i].android_id, posiciones[i].lat,posiciones[i].lon,posiciones[i].nombre,posiciones[i].estado,posiciones[i].fecha]);
+			db.query('insert into posicion (android_id,lat,lon, nombre, estado, fecha) VALUES (?,?,?,?,?,?)', [posiciones[i].android_id, posiciones[i].lat,posiciones[i].lon,posiciones[i].nombre,posiciones[i].estado,posiciones[i].fecha.format("YYYY/MM/DD HH:mm:ss")]);
 		};
 	});
 }
