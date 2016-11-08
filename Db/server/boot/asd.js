@@ -14,8 +14,8 @@ module.exports = function(app) {
   });  
   app.dataSources.mysql.automigrate('denuncia', function(err) {
     if (err) console.log(err);
-  });*/  
-  app.dataSources.mysql.automigrate('posicion', function(err) {
+  });  
+  app.dataSources.mysql.automigrate('viaje', function(err) {
     if (err) console.log(err);
-  });
+  });*/
 };

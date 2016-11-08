@@ -2,21 +2,28 @@
   "name": "posicion",
   "plural": "posiciones",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
     "android_id": {
       "type": "string",
-      "required": true
+      "required": true,
+      "id":true
     },
     "lat": {
       "type": "number",
+      "dataType" : "float",
+      "precision" : 20,
+      "scale": 4,
       "required": true
     },
     "lon": {
       "type": "number",
+      "dataType" : "float",
+      "precision" : 20,
+      "scale": 4,
       "required": true
     },
     "fecha": {

@@ -5,12 +5,12 @@
   },
   "mysql": {
     "host": "localhost",
-    "port": 5507,
+    "port": 3306,
     "url": "",
     "database": "API",
-    "password": "Sin-Radio-5507",
+    "password": "1234",
     "name": "mysql",
-    "user": "sinradio",
+    "user": "root",
     "connector": "mysql"
   }
 }
