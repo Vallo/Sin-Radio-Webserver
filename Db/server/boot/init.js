@@ -15,7 +15,7 @@ module.exports = function(app) {
   app.dataSources.mysql.automigrate('denuncia', function(err) {
     if (err) console.log(err);
   });  
-  app.dataSources.mysql.automigrate('viaje', function(err) {
+  app.dataSources.mysql.automigrate('emergencia', function(err) {
     if (err) console.log(err);
   });*/
 };

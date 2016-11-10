@@ -61,7 +61,7 @@
     "dataSource": "mysql",
     "public": true
   },
-  "test": {
+  "emergencia": {
     "dataSource": "mysql",
     "public": true
   }

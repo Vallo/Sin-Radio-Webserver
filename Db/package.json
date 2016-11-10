@@ -21,7 +21,7 @@
     "promise-mysql": "latest",
     "cron": "latest",
     "strong-error-handler": "^1.0.1",
-    "ari-client":"latest"
+    "ari-client": "latest"
   },
   "devDependencies": {
     "eslint": "^2.13.1",

@@ -1,0 +1,27 @@
+{
+  "name": "emergencia",
+  "plural": "emergencias",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "chofer": {
+      "type": "string",
+      "required": true
+    },
+    "latlon": {
+      "type": "geopoint",
+      "required": true
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -39,8 +39,8 @@
     "fecha": {
       "type": "date"
     },
-    "idCloud":{
-      "type":"number"
+    "idCloud": {
+      "type": "number"
     }
   },
   "validations": [],

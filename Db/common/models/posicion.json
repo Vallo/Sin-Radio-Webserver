@@ -9,22 +9,22 @@
   "properties": {
     "android_id": {
       "type": "string",
-      "required": true,
-      "id":true
+      "id": true,
+      "required": true
     },
     "lat": {
       "type": "number",
-      "dataType" : "float",
-      "precision" : 20,
-      "scale": 4,
-      "required": true
+      "required": true,
+      "dataType": "float",
+      "precision": 20,
+      "scale": 4
     },
     "lon": {
       "type": "number",
-      "dataType" : "float",
-      "precision" : 20,
-      "scale": 4,
-      "required": true
+      "required": true,
+      "dataType": "float",
+      "precision": 20,
+      "scale": 4
     },
     "fecha": {
       "type": "date",

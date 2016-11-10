@@ -1,6 +1,6 @@
 var config = {};
 
-config.cloud = 'http://localhost'//'http://api.sin-radio.com.ar';
+config.cloud = 'http://localhost/'//'http://api.sin-radio.com.ar';
 /*config.web = {};
 config.default_stuff =  ['red','green','blue','apple','yellow','orange','politics'];
 config.twitter.user_name = process.env.TWITTER_USER || 'username';
