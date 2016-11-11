@@ -9,7 +9,7 @@ module.exports = function(app) {
 	router.get('/initTts', function(req,res){
 		tts.getTts("Bienvenido a sin radio",'bienvenido');
 		tts.getTts("Pulse uno si desea pedir un taxi hacia ",'desea');
-		tts.getTts("O aguarde y será atendido ",'aguarde');
+		tts.getTts("O pulse 2 y será atendido ",'aguarde');
 		tts.getTts("Su taxi se encuentra en camino. Muchas gracias por utilizar sin radio.",'taxiPedido');
 		res.sendStatus(200);
 	});

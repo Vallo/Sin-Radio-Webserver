@@ -77,7 +77,7 @@ module.exports = function(app) {
 					});
 				});
 			}
-			ari.start('ivr');
+			ari.start('ivr2');
 		}).catch(function(err){
 			console.log('fallo')
 			console.log(err);
