@@ -30,6 +30,10 @@
     "direccionFavoritaLatLon": {
       "type": "geopoint",
       "required": true
+    },
+    "detalle": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],

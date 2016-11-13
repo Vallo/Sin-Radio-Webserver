@@ -3,8 +3,9 @@ var tts = require('../utils/tts.js');
 
 module.exports = function(Cliente) {
 	Cliente.observe('after save', function logQuery(ctx, next) {
-		console.log(ctx.instance.direccionFavorita);
-		tts.getTts(ctx.instance.direccionFavorita, ctx.instance.telefono);
+		var text = ctx.instance.direccionFavorita + ' ' + ctx.instance.detalle;
+		console.log(text);
+		tts.getTts(text, ctx.instance.telefono);
 		next();
 	});
 };
