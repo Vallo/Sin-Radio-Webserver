@@ -36,8 +36,7 @@
       "required": true
     },
     "extension": {
-      "type": "number",
-      "required": true
+      "type": "number"
     }
   },
   "validations": [],
