@@ -28,13 +28,13 @@
       "type": "number"
     },
     "cliente": {
-      "type": "number"
+      "type": "string"
     },
     "cuentaCorriente": {
       "type": "number"
     },
     "movilAsignado": {
-      "type": "number"
+      "type": "string"
     },
     "fecha": {
       "type": "date"

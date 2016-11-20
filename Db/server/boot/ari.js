@@ -42,6 +42,7 @@ module.exports = function(app) {
 			}
 			else {
 				console.log('TRANSFIERO');
+				app.io.emit('llamada',{'telefono':channel.caller.name})
 				originate(channel);
 			}
 		});
@@ -66,7 +67,6 @@ module.exports = function(app) {
 			case '2': //pido interno creo bridge y transfiero?
 			console.log('transfiero')
 			originate(channel);
-			
 			break;
 			default:
 		}

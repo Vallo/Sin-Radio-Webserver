@@ -1,5 +1,5 @@
 module.exports = function(app) {
-  /*
+  
   app.dataSources.mysql.automigrate('chofer', function(err) {
     if (err) console.log(err);
   });
@@ -23,5 +23,5 @@ module.exports = function(app) {
   }); 
   app.dataSources.mysql.automigrate('viaje', function(err) {
     if (err) console.log(err)
-  });*/
+  });
 };
