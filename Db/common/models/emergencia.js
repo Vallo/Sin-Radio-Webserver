@@ -1,9 +1,8 @@
 'use strict';
 
-var loopback = require('loopback');
+var app = require('../../server/server');
 
 module.exports = function(Emergencia) {
-	var app = loopback();
 	Emergencia.observe('after save', function logQuery(ctx, next) {
 		app.io.emit('emergencia',ctx.instance);
 		next();
