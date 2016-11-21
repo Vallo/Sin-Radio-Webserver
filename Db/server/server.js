@@ -25,5 +25,11 @@ boot(app, __dirname, function(err) {
 
   // start the server if `$ node server.js`
   if (require.main === module)
-    app.start();
+    app.io = require('socket.io')(app.start());
+	app.io.on('connection',function(){
+		console.log('conectado');
+		app.io.emit('test','asd');
+	});
+	app.io.on('chat',function(){ console.log('chatt');});
+    //app.start();
 });

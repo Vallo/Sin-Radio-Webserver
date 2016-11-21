@@ -49,7 +49,7 @@ module.exports = function(app) {
 	}
 
 	function updateViajesOnline() {
-		db.query("select idCloud from viaje where monto is null").then(function(result){
+		db.query("select idCloud from viaje where monto is null and idCloud is not null").then(function(result){
 			var viajes = [];
 			for (var i = 0; i < result.length; i++){
 				viajes.push(result[i].idCloud);

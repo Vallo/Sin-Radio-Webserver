@@ -6,7 +6,7 @@ module.exports = function(Chofer) {
 
 	Chofer.observe('after save', function logQuery(ctx, next) {
 		requestify.post(url + 'chofer',{
-			tel:ctx.instance.telefono,
+			tel:ctx.instance.celular,
 			nombre:ctx.instance.nombre
 		});
 		next();
