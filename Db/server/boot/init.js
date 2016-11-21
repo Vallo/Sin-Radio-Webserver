@@ -21,7 +21,7 @@ module.exports = function(app) {
   app.dataSources.mysql.automigrate('posicion', function(err) {
     if (err) console.log(err);
   });*/ 
-  app.dataSources.mysql.automigrate('usuario', function(err) {
+  app.dataSources.mysql.automigrate('alerta-vial', function(err) {
     if (err) console.log(err)
   });
 };

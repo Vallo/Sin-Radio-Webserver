@@ -64,5 +64,9 @@
   "emergencia": {
     "dataSource": "mysql",
     "public": true
+  },
+  "alertaVial": {
+    "dataSource": "mysql",
+    "public": true
   }
 }

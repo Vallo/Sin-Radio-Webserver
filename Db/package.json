@@ -22,7 +22,7 @@
     "cron": "latest",
     "strong-error-handler": "^1.0.1",
     "ari-client": "latest",
-    "socket.io":"latest"
+    "socket.io": "latest"
   },
   "devDependencies": {
     "eslint": "^2.13.1",
