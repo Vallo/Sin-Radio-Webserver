@@ -20,8 +20,8 @@ module.exports = function(app) {
   }); 
   app.dataSources.mysql.automigrate('posicion', function(err) {
     if (err) console.log(err);
-  });*/ 
-  app.dataSources.mysql.automigrate('alerta-vial', function(err) {
+  });*/
+  app.dataSources.mysql.automigrate('alertaVial', function(err) {
     if (err) console.log(err)
   });
 };
