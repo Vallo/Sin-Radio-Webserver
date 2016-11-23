@@ -4,7 +4,7 @@ pool = mysql.createPool({
   host     : 'localhost',
 	  user     : 'root',
 	  password : '1234',
-	  database : 'test',
+	  database : 'API',
 	  port: '3306',
   connectionLimit: 10
 });
