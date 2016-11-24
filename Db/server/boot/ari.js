@@ -56,8 +56,10 @@ module.exports = function(app) {
 			clientes.find({where: {telefono : channel.caller.name}}, function(err,result){
 				if (err) return;
 				if(result){
+					var date = new Date();
+					console.log(date.toString());
 					console.log('pedi taxi a ' + result[0].direccionFavorita + ' --------- ' + JSON.stringify(result[0].direccionFavoritaLatLon));
-					app.models.viaje.create({direccionOrigen : result[0].direccionFavorita, direccionOrigenLatLon : result[0].direccionFavoritaLatLon, detalle : result[0].detalle})
+					app.models.viaje.create({direccionOrigen : result[0].direccionFavorita, direccionOrigenLatLon : result[0].direccionFavoritaLatLon, detalle : result[0].detalle, cliente: channel.caller.name, fecha : date.toString()})
 					play(channel, 'taxiPedido').then(function(){
 						channel.hangup();
 					});
